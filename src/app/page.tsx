@@ -1,60 +1,66 @@
 import "./globals.css";
 import Image from 'next/image'
+import Link from 'next/link'
+import { Header } from '@/components'
 
 
 export default function Home() {
     return (
-        <div className="h-screen max-h-screen py-6 sm:py-8 lg:py-12 flex flex-col items-center px-4 md:px-8">
+        // <div className="h-screen max-h-screen py-6 sm:py-8 lg:py-12 px-4 md:px-8 flex flex-col items-center">
+        <>
             {/* header */}
-            <div className="w-full max-w-screen-2xl mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-                <div className="flex items-center gap-12">
-                    <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">Antonio Martínez</h2>
+            <Header
+            title={'Antonio Martínez'}
+            subtitle={'Fullstack Developer with vast experience in single, mobile and enterprise solutions.'}
+            />
 
-                    <h3 className="hidden md:block max-w-screen-sm text-gray-500 md:text-xl">
-                    Fullstack Developer with vast experience in single, mobile and enterprise solutions.
-                    </h3>
-                </div>
-                <a href="#" className="inline-block rounded-lg border bg-gray-800 px-4 py-2 text-center text-sm font-semibold text-gray-100 outline-none ring-indigo-300 transition duration-200 hover:bg-gray-300 hover:text-gray-800 focus-visible:ring active:bg-gray-400 md:px-8 md:py-3 md:text-base">
-                Contact
-                </a>
-                <h3 className="block md:hidden w-full text-gray-500 mb-4">
-                    Fullstack Developer with vast experience in single, mobile and enterprise solutions.
-                </h3>
-            </div>
 
             {/* grid */}
             <div className="flex h-full w-full max-w-screen-2xl items-center justify-center">
                 <div className="grid h-full w-full gap-4 md:gap-6 xl:gap-8">
                     {/* about me */}
-                    <a href="#"
+                    <Link href="#"
                     className="col-span1 md:col-span-2 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
-                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" 
-                        fetchPriority="high" 
+                        <Image
+                        src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" 
                         alt="About me" 
+                        width={600} height={300}
+                        fetchPriority="high" 
                         className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" 
                         />
                         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-50 group-hover:opacity-100 transition duration-200">
                         </div>
                         <span className="relative ml-4 mb-3 inline-block text-md text-white md:ml-5 md:text-xl">About me</span>
-                    </a>
+                    </Link>
 
                     {/* networks */}
-                    <a href="#"
+                    <Link href="#"
                     className="col-span-1 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
-                        <img src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" 
-                        alt="Networks" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                        <Image
+                        src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" 
+                        alt="Networks" 
+                        width={600} height={300}
+                        fetchPriority="high" 
+                        className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" 
+                        />
                         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-50 group-hover:opacity-100 transition duration-200">
                         </div>
                         <span className="relative ml-4 mb-3 inline-block text-md text-white md:ml-5 md:text-xl">Networks</span>
-                    </a>
+                    </Link>
                     
                     {/* projects */}
                     <div
                     className="col-span-1 md:col-span-3 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
-                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" alt="Projects" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                        <Image
+                        src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" 
+                        alt="Projects" 
+                        width={600} height={300}
+                        fetchPriority="high" 
+                        className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" 
+                        />
                         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-50 group-hover:opacity-100 transition duration-200">
                         </div>
                         <div className={`
@@ -70,8 +76,8 @@ export default function Home() {
                         >
 
                             <div className={`grid grid-cols-6 gap-6`}>
-                                <a 
-                                href="#"
+                                <Link 
+                                href="/project/dentista_coapa"
                                 className={`
                                 aspect-square 
                                 flex flex-col items-center justify-center relative 
@@ -92,12 +98,41 @@ export default function Home() {
 
                                     <Image
                                     className="w-3/4"
-                                    src={'https://www.dentistacoapa.com/static/img/LZ_mini.svg'}
+                                    src={'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/dentista_coapa/tche25ba9pooj6yfdcyr'}
                                     alt={'LZ'}
                                     height={30}
                                     width={30}
                                     />
-                                </a>
+                                </Link>
+
+                                <Link
+                                href="/project/panacea"
+                                className={`
+                                aspect-square 
+                                flex flex-col items-center justify-center relative 
+                                bg-gray-100
+                                cursor-pointer rounded-2xl 
+                                opacity-0 group-hover:opacity-100 
+                                transition duration-200`}
+                                >   
+                                    <div className={`bg-gray-800 
+                                        opacity-0 hover:opacity-100 
+                                        transition duration-200
+                                        w-full h-full absolute rounded-xl 
+                                        flex flex-col justify-center`}>
+                                        <p className={`w-full p-2 text-center text-xl text-gray-100`}>
+                                            "Panacea" - CBD products showcase
+                                        </p>
+                                    </div>
+
+                                    <Image
+                                    className="w-3/4"
+                                    src={'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/panacea/kwxe2xrxnlwd0cu4z1jf'}
+                                    alt={'LZ'}
+                                    height={30}
+                                    width={30}
+                                    />
+                                </Link>
                             </div>
                             <div className={`grid grid-cols-6 gap-6`}>
                                 <div className={`
@@ -110,7 +145,9 @@ export default function Home() {
                                 transition duration-200
                                 col-start-6
                                 `}
-                                >Ver todos</div>
+                                >
+                                    Ver todos
+                                </div>
                             </div>
                             
                         </div>
@@ -119,6 +156,6 @@ export default function Home() {
                 </div>
 
             </div>
-        </div>
+        </>
     )
 }
