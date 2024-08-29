@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="h-screen max-h-screen py-6 sm:py-8 lg:py-12 px-4 md:px-8 flex flex-col items-center">
+        <main className="min-h-screen py-6 sm:py-8 lg:py-12 px-4 md:px-8 flex flex-col items-center">
         {children}
         </main>
         <Footer/>
