@@ -65,11 +65,11 @@ export default async function ProjectPage({params}: Props) {
                     />
                 </Link>
 
-                <div className={`text-xl flex flex-col items-start gap-6`}>
+                <div className={`md:text-xl flex flex-col items-start gap-6`}>
                     <span>
                         <strong>Project title:</strong>
                         <br />
-                        <h3 className='text-2xl'>{title}</h3>
+                        <h3 className='text-xl md:text-2xl'>{title}</h3>
                     </span>
                     <h4><strong>Project Description:</strong><br />{ long_description }</h4>
                     <span>
