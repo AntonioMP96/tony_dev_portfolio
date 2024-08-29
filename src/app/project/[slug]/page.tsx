@@ -22,7 +22,7 @@ const projectData: Record<string, {
     'panacea': {
         title: 'Panacea',
         short_description: 'A slideshow page for a CBD products startup located in Mexico City.',
-        long_description: 'A slideshow page for a CBD products startup located in Mexico City.',
+        long_description: 'A slideshow page for a CBD products startup located in Mexico City. Where people can get to know more about CBD and its properties, and browse all the companie"s products.',
         link: 'https://panacea-mexico-683mhyhv0-tony-dev96.vercel.app/',
         image: 'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/etjjo3l1qrkufbd4uje7'
     }
