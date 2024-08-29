@@ -16,8 +16,8 @@ export default function Home() {
 
 
             {/* grid */}
-            <div className="flex h-full w-full max-w-screen-2xl items-center justify-center">
-                <div className="grid h-full w-full gap-4 md:gap-6 xl:gap-8">
+            <div className="flex flex-1 h-full w-full max-w-screen-2xl items-center justify-center relative">
+                <div className="absolute top-0 bottom-0 left-0 right-0 grid h-full w-full gap-4 md:gap-6 xl:gap-8">
                     {/* about me */}
                     <Link href="#"
                     className="col-span1 md:col-span-2 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
