@@ -75,7 +75,8 @@ export default function Home() {
                         
                         >
 
-                            <div className={`grid grid-cols-6 gap-6`}>
+                            <div className={`grid gap-6
+                                grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 `}>
                                 <Link 
                                 href="/project/dentista_coapa"
                                 className={`
@@ -134,7 +135,8 @@ export default function Home() {
                                     />
                                 </Link>
                             </div>
-                            <div className={`grid grid-cols-6 gap-6`}>
+                            <div className={`grid gap-6
+                                grid-cols-4 lg:grid-cols-5 xl:grid-cols-6`}>
                                 <Link href="/projects" className={`
                                 aspect-square
                                 text-white text-xl
@@ -143,7 +145,7 @@ export default function Home() {
                                 rounded-2xl 
                                 opacity-0 group-hover:opacity-100 
                                 transition duration-200
-                                col-start-6
+                                col-start-4 lg:col-start-5 xl:col-start-6
                                 `}
                                 >
                                     Ver todos
