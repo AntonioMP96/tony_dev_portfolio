@@ -12,7 +12,6 @@ interface Props {
 export const Header = ({title, subtitle}: Props) => {
 
     const pathname = usePathname()
-    console.log({pathname})
 
     return (
         <header className='w-full max-w-screen-2xl'>
