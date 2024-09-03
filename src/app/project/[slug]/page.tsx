@@ -26,14 +26,15 @@ export default async function ProjectPage({params}: Props) {
             subtitle={short_description}
             />
             
-            <div className={`max-w-screen-2xl mt-10 
-            grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 
-            gap-10 items-center justify-center`}>
+            <div className={`max-w-screen-2xl mt-1 md:mt-10 
+            grid 
+            md:grid-cols-2 md:grid-rows-1
+            gap-7 md:gap-10 items-center justify-center`}>
                 
 
                 <Link href={link}
                 className={`
-                col-span-1 row-span-1 h-full w-full
+                col-span-1 row-span-1 min-h-56 h-full w-full
                 rounded-2xl shadow-lg overflow-hidden group relative
                 `}>
                     <Image
@@ -67,7 +68,7 @@ export default async function ProjectPage({params}: Props) {
                 </div>
             </div>
 
-            <div className='mt-60'>
+            <div className='mt-20 md:mt-60'>
                 <Link href="/projects"
                 className={`inline-block 
                 rounded-lg border bg-transparent px-4 py-2 
