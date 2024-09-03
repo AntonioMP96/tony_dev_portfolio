@@ -135,19 +135,19 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className={`grid grid-cols-6 gap-6`}>
-                                <div className={`
+                                <Link href="/projects" className={`
                                 aspect-square
                                 text-white text-xl
                                 flex items-center justify-center
                                 bg-gray-800 hover:bg-gray-950 
-                                cursor-pointer rounded-2xl 
+                                rounded-2xl 
                                 opacity-0 group-hover:opacity-100 
                                 transition duration-200
                                 col-start-6
                                 `}
                                 >
                                     Ver todos
-                                </div>
+                                </Link>
                             </div>
                             
                         </div>
