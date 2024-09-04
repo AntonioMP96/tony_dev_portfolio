@@ -17,10 +17,13 @@ export default function Home() {
 
             {/* grid */}
             <div className="flex flex-1 h-full w-full max-w-screen-2xl items-center justify-center relative">
-                <div className="absolute top-0 bottom-0 left-0 right-0 grid h-full w-full gap-4 md:gap-6 xl:gap-8">
+                <div className={`absolute top-0 bottom-0 left-0 right-0 
+                grid md:grid-cols-3 md:grid-rows-4
+                gap-4 md:gap-6 xl:gap-8
+                `}>
                     {/* about me */}
                     <Link href="#"
-                    className="col-span1 md:col-span-2 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
+                    className="col-span1 md:col-span-2 row-span-1 md:row-span-2 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
                         <Image
                         src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" 
@@ -47,12 +50,35 @@ export default function Home() {
                         />
                         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-50 group-hover:opacity-100 transition duration-200">
                         </div>
-                        <span className="relative ml-4 mb-3 inline-block text-md text-white md:ml-5 md:text-xl">Networks</span>
+                        <span className="relative ml-4 mb-3 inline-block text-md text-white md:ml-5 md:text-xl">
+                            Github
+                        </span>
+                    </Link>
+
+                    {/* networks */}
+                    <Link href="#"
+                    className="col-span-1 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
+                    >
+                        <Image
+                        src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" 
+                        alt="Networks" 
+                        width={600} height={300}
+                        fetchPriority="high" 
+                        className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" 
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-50 group-hover:opacity-100 transition duration-200">
+                        </div>
+                        <span className="relative ml-4 mb-3 inline-block text-md text-white md:ml-5 md:text-xl">
+                            Linkedin
+                        </span>
                     </Link>
                     
                     {/* projects */}
                     <div
-                    className="col-span-1 md:col-span-3 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
+                    className={`col-span-1 md:col-span-3  
+                    row-span-1 md:row-span-2 
+                    rounded-2xl shadow-lg overflow-hidden 
+                    flex items-end group relative`}
                     >
                         <Image
                         src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" 
@@ -90,16 +116,17 @@ export default function Home() {
                                     <div className={`bg-gray-800 
                                         opacity-0 hover:opacity-100 
                                         transition duration-200
-                                        w-full h-full absolute rounded-xl 
+                                        w-full h-full absolute rounded-xl p-3
                                         flex flex-col justify-center`}>
-                                        <p className={`w-full p-2 text-center text-xl text-gray-100`}>
-                                            "Lizbeth Zepeda" - Local dentist webpage
+                                        <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
+                                            Lizbeth Zepeda
                                         </p>
+                                        <p className={`w-full text-center text-md text-gray-100`}>Local dentist webpage</p>
                                     </div>
 
                                     <Image
                                     className="w-3/4"
-                                    src={'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/dentista_coapa/tche25ba9pooj6yfdcyr'}
+                                    src={'https://www.dentistacoapa.com/static/img/LZ_mini.svg'}
                                     alt={'LZ'}
                                     height={30}
                                     width={30}
@@ -119,11 +146,12 @@ export default function Home() {
                                     <div className={`bg-gray-800 
                                         opacity-0 hover:opacity-100 
                                         transition duration-200
-                                        w-full h-full absolute rounded-xl 
+                                        w-full h-full absolute rounded-xl p-3
                                         flex flex-col justify-center`}>
-                                        <p className={`w-full p-2 text-center text-xl text-gray-100`}>
-                                            "Panacea" - CBD products showcase
+                                        <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
+                                            Panacea
                                         </p>
+                                        <p className={`w-full text-center text-md text-gray-100`}>CBD products showcase</p>
                                     </div>
 
                                     <Image
