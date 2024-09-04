@@ -38,11 +38,11 @@ export default function Home() {
                     </Link>
 
                     {/* networks */}
-                    <Link href="#"
+                    <a href="https://github.com/AntonioMP96" target="_blank"
                     className="col-span-1 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
                         <Image
-                        src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" 
+                        src="https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/hm2vq7hjiazt8buhpbnq" 
                         alt="Networks" 
                         width={600} height={300}
                         fetchPriority="high" 
@@ -53,14 +53,14 @@ export default function Home() {
                         <span className="relative ml-4 mb-3 inline-block text-md text-white md:ml-5 md:text-xl">
                             Github
                         </span>
-                    </Link>
+                    </a>
 
                     {/* networks */}
                     <Link href="#"
                     className="col-span-1 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
                         <Image
-                        src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" 
+                        src="https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/jzr78ksm9tio3wur38bg" 
                         alt="Networks" 
                         width={600} height={300}
                         fetchPriority="high" 
@@ -90,7 +90,7 @@ export default function Home() {
                         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-50 group-hover:opacity-100 transition duration-200">
                         </div>
                         <div className={`
-                        p-6 pb-10 w-full h-full
+                        p-8 pb-10 w-full h-full
                         pointer-events-auto absolute 
                         top-full group-hover:-translate-y-full 
                         opacity-0 group-hover:opacity-100
@@ -101,83 +101,90 @@ export default function Home() {
                         
                         >
 
-                            <div className={`grid gap-6
-                                grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 `}>
-                                <Link 
-                                href="/project/dentista_coapa"
-                                className={`
-                                aspect-square 
-                                flex flex-col items-center justify-center relative 
-                                bg-gray-100
-                                cursor-pointer rounded-2xl 
-                                opacity-0 group-hover:opacity-100 
-                                transition duration-200`}
-                                >   
-                                    <div className={`bg-gray-800 
-                                        opacity-0 hover:opacity-100 
-                                        transition duration-200
-                                        w-full h-full absolute rounded-xl p-3
-                                        flex flex-col justify-center`}>
-                                        <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
-                                            Lizbeth Zepeda
-                                        </p>
-                                        <p className={`w-full text-center text-md text-gray-100`}>Local dentist webpage</p>
-                                    </div>
+                            <div className={`h-full
+                            grid gap-6 items-center
+                            grid-cols-4 lg:grid-cols-6 xl:grid-cols-9
+                            grid-rows-2`}>
+                                <div className={`col-span-1 h-fit`}>
+                                    <Link 
+                                    href="/project/dentista_coapa"
+                                    className={`
+                                    max-h-full aspect-square max-w-full 
+                                    flex flex-col items-center justify-center relative 
+                                    bg-gray-100
+                                    cursor-pointer rounded-2xl 
+                                    opacity-0 group-hover:opacity-100 
+                                    transition duration-200`}
+                                    >
+                                        <div className={`bg-gray-800 
+                                            opacity-0 hover:opacity-100 
+                                            transition duration-200
+                                            w-full h-full absolute rounded-xl p-3
+                                            flex flex-col justify-center`}>
+                                            <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
+                                                Lizbeth Zepeda
+                                            </p>
+                                            <p className={`w-full text-center text-md text-gray-100`}>Local dentist webpage</p>
+                                        </div>
 
-                                    <Image
-                                    className="w-3/4"
-                                    src={'https://www.dentistacoapa.com/static/img/LZ_mini.svg'}
-                                    alt={'LZ'}
-                                    height={30}
-                                    width={30}
-                                    />
-                                </Link>
+                                        <Image
+                                        className="w-3/4"
+                                        src={'https://www.dentistacoapa.com/static/img/LZ_mini.svg'}
+                                        alt={'LZ'}
+                                        height={30}
+                                        width={30}
+                                        />
+                                    </Link>
+                                </div>
+                                
+                                <div className={`col-span-1 h-fit`}>
+                                    <Link
+                                    href="/project/panacea"
+                                    className={`
+                                    max-h-full aspect-square
+                                    flex flex-col items-center justify-center relative 
+                                    bg-gray-100
+                                    cursor-pointer rounded-2xl 
+                                    opacity-0 group-hover:opacity-100 
+                                    transition duration-200`}
+                                    >   
+                                        <div className={`bg-gray-800 
+                                            opacity-0 hover:opacity-100 
+                                            transition duration-200
+                                            w-full h-full absolute rounded-xl p-3
+                                            flex flex-col justify-center`}>
+                                            <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
+                                                Panacea
+                                            </p>
+                                            <p className={`w-full text-center text-md text-gray-100`}>CBD products showcase</p>
+                                        </div>
 
-                                <Link
-                                href="/project/panacea"
-                                className={`
-                                aspect-square 
-                                flex flex-col items-center justify-center relative 
-                                bg-gray-100
-                                cursor-pointer rounded-2xl 
-                                opacity-0 group-hover:opacity-100 
-                                transition duration-200`}
-                                >   
-                                    <div className={`bg-gray-800 
-                                        opacity-0 hover:opacity-100 
-                                        transition duration-200
-                                        w-full h-full absolute rounded-xl p-3
-                                        flex flex-col justify-center`}>
-                                        <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
-                                            Panacea
-                                        </p>
-                                        <p className={`w-full text-center text-md text-gray-100`}>CBD products showcase</p>
-                                    </div>
-
-                                    <Image
-                                    className="w-3/4"
-                                    src={'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/panacea/kwxe2xrxnlwd0cu4z1jf'}
-                                    alt={'LZ'}
-                                    height={30}
-                                    width={30}
-                                    />
-                                </Link>
-                            </div>
-                            <div className={`grid gap-6
-                                grid-cols-4 lg:grid-cols-5 xl:grid-cols-6`}>
-                                <Link href="/projects" className={`
-                                aspect-square
-                                text-white text-xl
-                                flex items-center justify-center
-                                bg-gray-800 hover:bg-gray-950 
-                                rounded-2xl 
-                                opacity-0 group-hover:opacity-100 
-                                transition duration-200
-                                col-start-4 lg:col-start-5 xl:col-start-6
-                                `}
-                                >
-                                    Ver todos
-                                </Link>
+                                        <Image
+                                        className="w-3/4"
+                                        src={'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/panacea/kwxe2xrxnlwd0cu4z1jf'}
+                                        alt={'LZ'}
+                                        height={30}
+                                        width={30}
+                                        />
+                                    </Link>
+                                </div>
+                                
+                                <div className={`col-span-1 h-fit
+                                col-start-4 lg:col-start-6 xl:col-start-9
+                                row-start-2`}>
+                                    <Link href="/projects" className={`
+                                    max-h-full aspect-square
+                                    text-white text-xl
+                                    flex items-center justify-center
+                                    bg-gray-800 hover:bg-gray-950 
+                                    rounded-2xl 
+                                    opacity-0 group-hover:opacity-100 
+                                    transition duration-200
+                                    `}
+                                    >
+                                        View all
+                                    </Link>
+                                </div>
                             </div>
                             
                         </div>
