@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { Modal } from '@/components'
-import { FaWhatsapp, FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
+import { FaWhatsapp, FaEnvelope, FaDiscord } from 'react-icons/fa'
 
 interface Props {
     title: string
@@ -19,6 +19,23 @@ export const Header = ({title, subtitle}: Props) => {
     const [isModalOpen, setModalOpen] = useState(false)
     const openModal = () => setModalOpen(true)
     const closeModal = () => setModalOpen(false)
+
+    const handleEmailClick = () => {
+        window.location.href = 'mailto:jantoniomgfis@yahoo.com'
+    }
+
+    const phoneNumber = "525510533016"
+
+    const handleWhatsAppClick = () => {
+        const url = `https://wa.me/${phoneNumber}`
+        window.open(url, '_blank')
+    }
+
+    const discordUserId = "1059680542834040872"
+    const handleDiscordClick = () => {
+        const url = `https://discordapp.com/users/${discordUserId}`
+        window.open(url, '_blank')
+    }
 
     return (
         <header className='w-full max-w-screen-2xl'>
@@ -43,24 +60,28 @@ export const Header = ({title, subtitle}: Props) => {
                     </button>
                 }
             </div>
-            <h2 className="block md:hidden w-full text-gray-500 mb-4">
+            <h2 className="block md:hidden w-full text-gray-500 mb-5">
                 { subtitle }
             </h2>
             <Modal isOpen={isModalOpen} onClose={closeModal}>
                 <h2 className='text-xl font-bold mb-5'>Contact Antonio</h2>
-                <p className={`mb-5`}>Select any of the following contact ways:</p>
-                <div className='flex justify-between gap-5'>
-                    <button className='border-2 border-gray-700 rounded-xl p-4 transition-all hover:text-white hover:bg-gray-800'>
-                        <FaWhatsapp size={60} />
-                    </button>
-                    <button className='border-2 border-gray-700 rounded-xl p-4 transition-all hover:text-white hover:bg-gray-800'>
-                        <FaEnvelope size={60} />
-                    </button>
-                    <a 
-                    href="tel: 000000000"
+                <p className={`mb-5`}>Select any of the following contact methods:</p>
+                <div className='flex justify-center gap-3 md:gap-5'>
+                    <button 
+                    onClick={handleWhatsAppClick}
                     className='border-2 border-gray-700 rounded-xl p-4 transition-all hover:text-white hover:bg-gray-800'>
-                        <FaPhoneAlt size={60} />
-                    </a>
+                        <FaWhatsapp className='text-5xl md:text-7xl' />
+                    </button>
+                    <button 
+                    onClick={handleEmailClick}
+                    className='border-2 border-gray-700 rounded-xl p-4 transition-all hover:text-white hover:bg-gray-800'>
+                        <FaEnvelope className='text-5xl md:text-7xl' />
+                    </button>
+                    <button 
+                    onClick={handleDiscordClick}
+                    className='border-2 border-gray-700 rounded-xl p-4 transition-all hover:text-white hover:bg-gray-800'>
+                        <FaDiscord className='text-5xl md:text-7xl' />
+                    </button>
                 </div>
             </Modal>
         </header>
