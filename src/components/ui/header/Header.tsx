@@ -56,9 +56,11 @@ export const Header = ({title, subtitle}: Props) => {
                     <button className='border-2 border-gray-700 rounded-xl p-4 transition-all hover:text-white hover:bg-gray-800'>
                         <FaEnvelope size={60} />
                     </button>
-                    <button className='border-2 border-gray-700 rounded-xl p-4 transition-all hover:text-white hover:bg-gray-800'>
+                    <a 
+                    href="tel: 000000000"
+                    className='border-2 border-gray-700 rounded-xl p-4 transition-all hover:text-white hover:bg-gray-800'>
                         <FaPhoneAlt size={60} />
-                    </button>
+                    </a>
                 </div>
             </Modal>
         </header>
