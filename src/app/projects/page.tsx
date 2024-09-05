@@ -7,11 +7,6 @@ import projectsData from '@/lib/projects'
 
 export default function ProjectsPage() {
 
-    const test = {
-        '1': 1,
-        '2': 2
-    }
-
     return (
         <>
             <Header
