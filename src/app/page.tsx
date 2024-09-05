@@ -22,7 +22,7 @@ export default function Home() {
                 gap-4 md:gap-6 xl:gap-8
                 `}>
                     {/* about me */}
-                    <Link href="#"
+                    <Link href="/about_me"
                     className="col-span1 md:col-span-2 row-span-1 md:row-span-2 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
                         <Image
@@ -56,7 +56,7 @@ export default function Home() {
                     </a>
 
                     {/* networks */}
-                    <Link href="#"
+                    <a href="https://www.linkedin.com/in/antoniomartinezdev/" target="_blank"
                     className="col-span-1 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
                         <Image
@@ -71,7 +71,7 @@ export default function Home() {
                         <span className="relative ml-4 mb-3 inline-block text-md text-white md:ml-5 md:text-xl">
                             Linkedin
                         </span>
-                    </Link>
+                    </a>
                     
                     {/* projects */}
                     <div
@@ -174,7 +174,7 @@ export default function Home() {
                                 row-start-2`}>
                                     <Link href="/projects" className={`
                                     max-h-full aspect-square
-                                    text-white text-xl
+                                    text-white md:text-xl
                                     flex items-center justify-center
                                     bg-gray-800 hover:bg-gray-950 
                                     rounded-2xl 
