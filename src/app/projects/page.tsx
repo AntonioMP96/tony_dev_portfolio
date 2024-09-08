@@ -21,7 +21,9 @@ export default function ProjectsPage() {
 
                 {
                     Object.values(projectsData).map(project => (
-                        <div className={`
+                        <div
+                        key={project['slug']} 
+                        className={`
                             aspect-square
                             col-span-1 row-span-1 
                             flex flex-col gap-4 items-center
