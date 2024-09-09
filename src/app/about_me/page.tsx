@@ -1,17 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Header } from '@/components'
-import projectsData from '@/lib/projects'
-import { FaWhatsapp, FaEnvelope, FaDiscord, FaCss3, FaHtml5, FaPython, FaJs, FaDocker, FaGit, FaAws, FaReact } from 'react-icons/fa'
-import { RiNextjsFill } from "react-icons/ri";
-import { SiDjango, SiTypescript, SiTailwindcss } from "react-icons/si";
-
-
+import { FaWhatsapp, FaEnvelope, FaDiscord } from 'react-icons/fa'
+import { Header, TechSlackSlider } from '@/components'
 
 
 
 export default function ProjectsPage() {
-    
 
     return (
         <>
@@ -27,15 +21,15 @@ export default function ProjectsPage() {
                 gap-4 md:gap-6 xl:gap-8
                 `}>
                     <div className={`p-4 bg-gray-800 text-white col-span-2 row-span-2 rounded-xl shadow-xl flex flex-col items-center justify-center`}>
-                        <h2 className='text-6xl font-bold'>
+                        <h2 className='text-6xl md:text-7xl font-bold'>
                             Hi, I'm<br/>Tony 👋
-                            <p className="text-lg font-normal mt-3">Fullstack developer</p>
+                            <p className="text-lg md:text-xl font-normal mt-3">Fullstack developer</p>
                         </h2>
                         
                     </div>
                     <div className={`p-6 bg-gray-800 col-span-4 row-span-2 rounded-xl shadow-xl flex flex-col text-white`}>
-                        <h2 className='text-lg font-bold'>About me</h2>
-                        <p className='text-md mt-3'>
+                        <h2 className='text-lg md:text-2xl font-bold'>About me</h2>
+                        <p className='md:text-xl mt-3'>
                             I'm a fullstack developer with a vast career in engineering and development.
                             I have a passion for technology and a love for creating innovative solutions.
                             I'm always looking for new challenges and opportunities to grow as a developer.
@@ -46,8 +40,8 @@ export default function ProjectsPage() {
                         </p>
                     </div>
                     <div className={`bg-gray-800 col-span-2 row-span-1 rounded-xl shadow-xl p-6 text-white`}>
-                        <h2 className='text-lg font-bold'>Skills</h2>
-                        <p className='mt-3 text-md'>
+                        <h2 className='text-lg md:text-2xl font-bold'>Skills</h2>
+                        <p className='mt-3 text-md md:text-xl'>
                             Web | Backend | API | Android | Web Apps
                         </p>
                     </div>
@@ -69,30 +63,19 @@ export default function ProjectsPage() {
                         </button>
                     </div>
                     <div className={`bg-gray-800 col-span-2 row-span-2 rounded-xl shadow-xl p-6 text-white relative overflow-hidden`}>
-                        <h2 className='text-lg font-bold'>Professional experience</h2>
+                        <h2 className='text-lg md:text-2xl font-bold'>Professional experience</h2>
                         <div className='h-full bg-white w-[1px] absolute left-[30px] top-[75px]'></div>
-                        <ul className='mt-3'>
+                        <ul className='mt-3 md:text-xl'>
                             <li className='ml-5 list-disc'>Fullstack developer | Cykadas LLC | Sept 2022 - Now </li>
                             <li className='ml-5 list-disc'>Exploration geophysicist | Raptorodajes | May 2020 - June 2022</li>
                             <li className='ml-5 list-disc'>Python Teacher | SAGFI UNAM | Jan 2020 - Mar 2020</li>
                         </ul>
                     </div>
                     <div className={`bg-gray-800 col-span-4 row-span-1 rounded-xl shadow-xl p-6 text-white`}>
-                        <h2 className='text-lg font-bold'>Tech Stack</h2>
-                        <p className='mt-3 flex gap-3 text-4xl'>
-                            <FaPython/>
-                            <FaJs/>
-                            <SiDjango/>
-                            <RiNextjsFill/>
-                            <SiTypescript/>
-                            <FaCss3/>
-                            <FaHtml5/>
-                            <FaReact/>
-                            <SiTailwindcss/>
-                            <FaDocker/>
-                            <FaAws/>
-                            <FaGit/>
-                        </p>
+                        <h2 className='text-lg md:text-2xl font-bold'>Tech Stack</h2>
+                        
+                        {/* TechStackSlider */}
+                        <TechSlackSlider />
                     </div>
                 </div>
             </div>
