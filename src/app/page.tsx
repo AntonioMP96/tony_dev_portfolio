@@ -47,7 +47,7 @@ export default function Home() {
                         alt="Github" 
                         width={600} height={300}
                         fetchPriority="high" 
-                        className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" 
+                        className="absolute inset-0 h-full w-full object-cover object-top transition duration-200 group-hover:scale-110" 
                         />
                         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-50 group-hover:opacity-100 transition duration-200">
                         </div>
@@ -61,7 +61,7 @@ export default function Home() {
                     className="col-span-1 row-span-1 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
                         <Image
-                        src="https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/lymtuz8w153ayh4arcsf" 
+                        src="https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/iy1ezrsg5ysalsc2thh9" 
                         alt="Linkedin" 
                         width={600} height={300}
                         fetchPriority="high" 
