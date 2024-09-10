@@ -13,7 +13,7 @@ export const TechButton = ({image, title, onClick, hideName}: Props) => {
 
 
     return (
-        <div className={`h-full aspect-square mx-5
+        <div className={`h-full aspect-square mx-3
         ${hideName && 'cursor-pointer group'}
         `} onClick={onClick}>
             <Image

@@ -17,7 +17,7 @@ export const TechSlackSlider = () => {
 
     return (
         <>
-        <div className={`w-full h-full pt-3 pb-12 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]`}>
+        <div className={`w-full h-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]`}>
             <ul className={`h-full flex items-center justify-center md:justify-start [&_img]:max-w-none animate-infinite-scroll
             `}>
                 {
@@ -48,8 +48,11 @@ export const TechSlackSlider = () => {
             </ul>
         </div>
         <Modal isOpen={isModalOpen} onClose={closeModal} className='bg-gray-800'>
-            <div className='max-w-screen-sm'>
+            <div className='max-w-screen-md'>
                 <h3 className='text-2xl font-bold mb-5'>Tech Stack:</h3>
+                <p className='text-lg mb-6'>
+                    This are some of the languages, frameworks and tools that I use for my projects:
+                </p>
                 <div className='flex flex-wrap justify-around gap-6'>
                     {
                         Object.values(techStack).map((item, index) => (
