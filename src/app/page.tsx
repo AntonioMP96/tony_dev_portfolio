@@ -123,9 +123,11 @@ export default function Home() {
                                             w-full h-full absolute rounded-xl p-3
                                             flex flex-col justify-center`}>
                                             <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
-                                                Lizbeth Zepeda
+                                                Dentista Coapa
                                             </p>
-                                            <p className={`w-full text-center text-md text-gray-100`}>Local dentist webpage</p>
+                                            <p className={`w-full text-center text-sm text-gray-100`}>
+                                                Local dentist webpage
+                                            </p>
                                         </div>
 
                                         <Image
@@ -157,15 +159,17 @@ export default function Home() {
                                             <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
                                                 Panacea
                                             </p>
-                                            <p className={`w-full text-center text-md text-gray-100`}>CBD products showcase</p>
+                                            <p className={`w-full text-center text-sm text-gray-100`}>
+                                                CBD products showcase
+                                            </p>
                                         </div>
 
                                         <Image
                                         className="w-3/4"
-                                        src={'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/panacea/kwxe2xrxnlwd0cu4z1jf'}
+                                        src={'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/panacea/oyfk0muck7n9tagtr87n'}
                                         alt={'LZ'}
-                                        height={30}
-                                        width={30}
+                                        height={90}
+                                        width={90}
                                         />
                                     </Link>
                                 </div>
