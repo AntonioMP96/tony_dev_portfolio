@@ -47,7 +47,7 @@ export const TechSlackSlider = () => {
             </ul>
         </div>
         <Modal isOpen={isModalOpen} onClose={closeModal} className='bg-gray-800'>
-            <div className='max-w-screen-md'>
+            <div className='max-w-screen-md max-h-[500px] overflow-y-auto'>
                 <h3 className='text-2xl font-bold mb-5'>Tech Stack:</h3>
                 <p className='text-lg mb-6'>
                     This are some of the languages, frameworks and tools that I use for my projects:

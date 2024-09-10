@@ -19,8 +19,8 @@ export const TechButton = ({image, title, onClick, hideName}: Props) => {
             <Image
             src={image}
             alt={title}
-            width={100}
-            height={100}
+            width={90}
+            height={90}
             className='h-full w-full aspect-square'
             />
             <p className={`text-center text-sm mt-2 transition-all
