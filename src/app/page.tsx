@@ -27,7 +27,7 @@ export default function Home() {
                     >
                         <Image
                         src="https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/xerjhxkjnw0pmhlectyx" 
-                        // src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" 
+                        priority={true}
                         alt="About me" 
                         width={600} height={300}
                         fetchPriority="high" 
