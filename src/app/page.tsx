@@ -26,7 +26,8 @@ export default function Home() {
                     className="col-span1 md:col-span-2 row-span-1 md:row-span-2 rounded-2xl shadow-lg overflow-hidden flex items-end group relative"
                     >
                         <Image
-                        src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" 
+                        src="https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/xerjhxkjnw0pmhlectyx" 
+                        // src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" 
                         alt="About me" 
                         width={600} height={300}
                         fetchPriority="high" 
