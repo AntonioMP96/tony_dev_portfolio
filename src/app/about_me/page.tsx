@@ -14,7 +14,7 @@ export default function ProjectsPage() {
             subtitle={"I'm the fullstack developer that you would like to hire if you have an idea for you or your business that you'll like to make true. The craziest the idea, the better."}
             />
 
-            <div className="flex flex-1 h-full w-full max-w-screen-xl items-center justify-center relative">
+            <div className="flex flex-1 h-full w-full max-w-screen-2xl items-center justify-center relative">
                 <div className={`
                 absolute top-0 bottom-0 left-0 right-0 
                 grid md:grid-cols-6 md:grid-rows-4

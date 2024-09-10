@@ -30,7 +30,7 @@ export default async function ProjectPage({params}: Props) {
             <div className={`flex-1 gap-10
             flex flex-col items-center justify-between
             `}>
-                <div className={`max-w-screen-xl mt-1 md:mt-10 
+                <div className={`max-w-screen-2xl mt-1 md:mt-10 
                 grid 
                 md:grid-cols-2 md:grid-rows-1
                 gap-7 md:gap-10 items-center justify-center`}>

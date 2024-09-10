@@ -38,7 +38,7 @@ export const Header = ({title, subtitle}: Props) => {
     }
 
     return (
-        <header className='w-full max-w-screen-xl'>
+        <header className='w-full max-w-screen-2xl'>
             <div className="w-full mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
                 <div className="flex items-center gap-12">
                     <h1 className="text-3xl font-bold text-gray-800 lg:text-4xl">{ title }</h1>

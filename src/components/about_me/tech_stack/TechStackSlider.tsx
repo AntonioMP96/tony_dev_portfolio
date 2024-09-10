@@ -13,7 +13,6 @@ export const TechSlackSlider = () => {
     const closeModal = () => setModalOpen(false)
 
     const techStack = techStackData
-    console.log({techStack})
 
     return (
         <>

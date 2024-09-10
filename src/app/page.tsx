@@ -16,7 +16,7 @@ export default function Home() {
 
 
             {/* grid */}
-            <div className="flex flex-1 h-full w-full max-w-screen-xl items-center justify-center relative">
+            <div className="flex flex-1 h-full w-full max-w-screen-2xl items-center justify-center relative">
                 <div className={`absolute top-0 bottom-0 left-0 right-0 
                 grid md:grid-cols-3 md:grid-rows-4
                 gap-4 md:gap-6 xl:gap-8
