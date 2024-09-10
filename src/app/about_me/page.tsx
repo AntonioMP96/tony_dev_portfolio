@@ -27,7 +27,7 @@ export default function ProjectsPage() {
                         md:col-span-2 md:row-span-2 
                         rounded-xl shadow-xl flex flex-col items-center justify-center`}>
                         <h2 className='flex md:flex-col text-4xl xl:text-5xl 2xl:text-7xl font-bold'>
-                            <span>Hi, I'm&nbsp;</span>
+                            <span>Hi, I&apos;m&nbsp;</span>
                             <span>Tony 👋</span>
                             {/* <p className="text-lg md:text-xl font-normal mt-3">Fullstack developer</p> */}
                         </h2>
@@ -42,13 +42,13 @@ export default function ProjectsPage() {
                         {/* <div className="absolute h-[30%] right-0 left-0 bottom-0 bg-gradient-to-b from-transparent to-gray-800"></div> */}
                         <h2 className='text-lg 2xl:text-2xl font-bold'>About me</h2>
                         <p className='2xl:text-xl mt-3'>
-                            I'm a fullstack developer with a vast career in engineering and development.
+                            I&apos;m a fullstack developer with a vast career in engineering and development.
                             I have a passion for technology and a love for creating innovative solutions.
-                            I'm always looking for new challenges and opportunities to grow as a developer.
+                            I&apos;m always looking for new challenges and opportunities to grow as a developer.
                             <br/><br/>
-                            I'm a self-taught developer who has been coding for over 4 years now.
+                            I&apos;m a self-taught developer who has been coding for over 4 years now.
                             I have a strong foundation in programming languages and technologies.
-                            I'm always looking for new challenges and opportunities to grow as a developer.
+                            I&apos;m always looking for new challenges and opportunities to grow as a developer.
                         </p>
                     </div>
                     {/* Skills */}
