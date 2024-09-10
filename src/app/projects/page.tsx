@@ -14,7 +14,7 @@ export default function ProjectsPage() {
             subtitle={"Navigate throw all the projects that I've done"}
             />
             <div className={`h-full w-full flex-1
-            max-w-screen-2xl mt-10 
+            max-w-screen-xl mt-10 
             grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4
             items-start
             gap-10 justify-center`}>

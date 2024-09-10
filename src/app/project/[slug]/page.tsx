@@ -27,10 +27,10 @@ export default async function ProjectPage({params}: Props) {
             />
             
 
-            <div className={`flex-1 gap-5
+            <div className={`flex-1 gap-10
             flex flex-col items-center justify-between
             `}>
-                <div className={`max-w-screen-2xl mt-1 md:mt-10 
+                <div className={`max-w-screen-xl mt-1 md:mt-10 
                 grid 
                 md:grid-cols-2 md:grid-rows-1
                 gap-7 md:gap-10 items-center justify-center`}>
@@ -66,7 +66,8 @@ export default async function ProjectPage({params}: Props) {
                                 <li>JavaScript</li>
                             </ul>
                         </span>
-                        <a href={link} target="_blank" className={`inline-block rounded-lg border bg-gray-800 px-4 py-2 text-center text-sm font-semibold text-gray-100 outline-none ring-indigo-300 transition duration-200 hover:bg-gray-300 hover:text-gray-800 focus-visible:ring active:bg-gray-400 md:px-8 md:py-3 md:text-base`}>
+                        <a href={link} target="_blank" 
+                        className={`inline-block rounded-lg border bg-gray-800 px-4 py-2 text-center text-sm font-semibold text-gray-100 outline-none ring-indigo-300 transition duration-200 hover:bg-gray-300 hover:text-gray-800 focus-visible:ring active:bg-gray-400 md:px-8 md:py-3 md:text-base`}>
                             View&nbsp;live&nbsp;project
                         </a>
                     </div>

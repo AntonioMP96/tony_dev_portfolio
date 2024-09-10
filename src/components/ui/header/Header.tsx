@@ -38,7 +38,7 @@ export const Header = ({title, subtitle}: Props) => {
     }
 
     return (
-        <header className='w-full max-w-screen-2xl'>
+        <header className='w-full max-w-screen-xl'>
             <div className="w-full mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
                 <div className="flex items-center gap-12">
                     <h1 className="text-3xl font-bold text-gray-800 lg:text-4xl">{ title }</h1>
@@ -63,7 +63,7 @@ export const Header = ({title, subtitle}: Props) => {
             <h2 className="block md:hidden w-full text-gray-500 mb-5">
                 { subtitle }
             </h2>
-            <Modal isOpen={isModalOpen} onClose={closeModal}>
+            <Modal isOpen={isModalOpen} onClose={closeModal} className='bg-gray-100'>
                 <h2 className='text-xl font-bold mb-5'>Contact Antonio</h2>
                 <p className={`mb-5`}>Select any of the following contact methods:</p>
                 <div className='flex justify-center gap-3 md:gap-5'>
