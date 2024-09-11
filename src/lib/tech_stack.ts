@@ -72,6 +72,12 @@ const techStackData: Record<string, {
         image: 'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/av3dnza88gsvrwla1z8p',
         slug: 'mongo_db',
         type: ''
+    },
+    'git': {
+        title: 'Git',
+        image: 'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/w5hefbvz241meazxjktt',
+        slug: 'git',
+        type: ''
     }
 }
 
