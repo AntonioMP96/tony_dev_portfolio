@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FaWhatsapp, FaEnvelope, FaDiscord } from 'react-icons/fa'
 import { Header, TechSlackSlider } from '@/components'
+import { IoChevronForward } from "react-icons/io5";
 
 
 
@@ -37,11 +38,16 @@ export default function ProjectsPage() {
                     <div className={`p-6 bg-gray-800 
                     col-span-1 row-span-1
                     md:col-span-4 md:row-span-2 rounded-xl shadow-xl flex flex-col text-white
-                    overflow-hidden relative overflow-y-auto
+                    overflow-hidden relative md:overflow-y-auto
                     `}>
                         {/* <div className="absolute h-[30%] right-0 left-0 bottom-0 bg-gradient-to-b from-transparent to-gray-800"></div> */}
-                        <h2 className='text-lg 2xl:text-2xl font-bold'>About me</h2>
-                        <p className='2xl:text-xl mt-3'>
+                        <h2 className='text-lg 2xl:text-2xl font-bold flex justify-between items-center'>
+                            About me
+                            <button className='inline-block md:hidden text-2xl'>
+                                <IoChevronForward />
+                            </button>
+                        </h2>
+                        <p className='hidden md:block 2xl:text-xl mt-3'>
                             I&apos;m a fullstack developer with a vast career in engineering and development.
                             I have a passion for technology and a love for creating innovative solutions.
                             I&apos;m always looking for new challenges and opportunities to grow as a developer.
@@ -80,10 +86,15 @@ export default function ProjectsPage() {
                     {/* Proffesional experience */}
                     <div className={`bg-gray-800 
                     col-span-1 row-span-1
-                    md:col-span-2 md:row-span-2 rounded-xl shadow-xl p-6 text-white relative overflow-hidden overflow-y-auto`}>
+                    md:col-span-2 md:row-span-2 rounded-xl shadow-xl p-6 text-white relative overflow-hidden md:overflow-y-auto`}>
                         {/* <div className="absolute h-full right-0 left-0 bottom-0 bg-gradient-to-b from-transparent to-gray-800"></div> */}
-                        <h2 className='text-lg 2xl:text-2xl font-bold'>Professional experience</h2>
-                        <ul className='mt-3 2xl:text-xl relative'>
+                        <h2 className='text-lg 2xl:text-2xl font-bold flex justify-between items-center'>
+                            Professional experience
+                            <button className='inline-block md:hidden text-2xl'>
+                                <IoChevronForward />
+                            </button>
+                        </h2>
+                        <ul className='hidden md:block mt-3 2xl:text-xl relative'>
                             <div className='h-full bg-white w-[1px] absolute left-[4px] top-[15px]'></div>
                             <li className='ml-5 my-2 list-disc'>
                                 Fullstack developer @ 
