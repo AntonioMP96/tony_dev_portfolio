@@ -16,7 +16,7 @@ export default async function ProjectPage({params}: Props) {
         return <div>Project not found</div>
     }
 
-    const { title, short_description, long_description, link, image } = projectsData[slug]
+    const { title, short_description, long_description, link, image, tech_stack } = projectsData[slug]
 
 
     return (
@@ -60,10 +60,12 @@ export default async function ProjectPage({params}: Props) {
                         <h4><strong>Project Description:</strong><br />{ long_description }</h4>
                         <span>
                             <strong>Tech stack:</strong>
-                            <ul>
-                                <li>HTML 5</li>
-                                <li>CSS 3</li>
-                                <li>JavaScript</li>
+                            <ul className='list-disc pl-7'>
+                                {
+                                    tech_stack.map((tech, index) => (
+                                        <li key={index}>{tech}</li>
+                                    ))
+                                }
                             </ul>
                         </span>
                         <a href={link} target="_blank" 
