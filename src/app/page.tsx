@@ -2,6 +2,7 @@ import "./globals.css";
 import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components'
+import projectsData from '@/lib/projects'
 
 
 export default function Home() {
@@ -106,73 +107,65 @@ export default function Home() {
                             grid gap-6 items-center
                             grid-cols-4 lg:grid-cols-6 xl:grid-cols-9
                             grid-rows-2`}>
-                                <div className={`col-span-1 h-fit`}>
-                                    <Link 
-                                    href="/project/dentista_coapa"
-                                    className={`
-                                    max-h-full aspect-square max-w-full 
-                                    flex flex-col items-center justify-center relative 
-                                    bg-gray-100
-                                    cursor-pointer rounded-2xl 
-                                    opacity-0 group-hover:opacity-100 
-                                    transition duration-200`}
-                                    >
-                                        <div className={`bg-gray-800 
-                                            opacity-0 hover:opacity-100 
-                                            transition duration-200
-                                            w-full h-full absolute rounded-xl p-3
-                                            flex flex-col justify-center`}>
-                                            <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
-                                                Dentista Coapa
-                                            </p>
-                                            <p className={`w-full text-center text-sm text-gray-100`}>
-                                                Local dentist webpage
-                                            </p>
-                                        </div>
-
-                                        <Image
-                                        className="w-3/4"
-                                        src={'https://www.dentistacoapa.com/static/img/LZ_mini.svg'}
-                                        alt={'LZ'}
-                                        height={30}
-                                        width={30}
-                                        />
-                                    </Link>
-                                </div>
                                 
-                                <div className={`col-span-1 h-fit`}>
-                                    <Link
-                                    href="/project/panacea"
-                                    className={`
-                                    max-h-full aspect-square
-                                    flex flex-col items-center justify-center relative 
-                                    bg-gray-100
-                                    cursor-pointer rounded-2xl 
-                                    opacity-0 group-hover:opacity-100 
-                                    transition duration-200`}
-                                    >   
-                                        <div className={`bg-gray-800 
-                                            opacity-0 hover:opacity-100 
-                                            transition duration-200
-                                            w-full h-full absolute rounded-xl p-3
-                                            flex flex-col justify-center`}>
-                                            <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
-                                                Panacea
-                                            </p>
-                                            <p className={`w-full text-center text-sm text-gray-100`}>
-                                                CBD products showcase
-                                            </p>
+                                {
+                                    Object.values(projectsData).slice(0, 4).map((project, index) => (
+                                        <div className={`col-span-1 h-fit`} key={index}>
+                                            <Link
+                                            href="/project/panacea"
+                                            className={`
+                                            max-h-full aspect-square
+                                            flex flex-col items-center justify-center relative 
+                                            bg-gray-100
+                                            cursor-pointer rounded-2xl 
+                                            opacity-0 group-hover:opacity-100 
+                                            transition duration-200`}
+                                            >   
+                                                {
+                                                    project.small_image ?
+                                                    (
+                                                        <>
+                                                        <div className={`bg-gray-800 
+                                                            opacity-0 hover:opacity-100 
+                                                            transition duration-200
+                                                            w-full h-full absolute rounded-xl p-3
+                                                            flex flex-col justify-center`}>
+                                                            <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
+                                                                { project.title }
+                                                            </p>
+                                                            <p className={`w-full text-center text-sm text-gray-100`}>
+                                                                -
+                                                            </p>
+                                                        </div>
+        
+                                                        <Image
+                                                        className="w-3/4"
+                                                        src={project.small_image}
+                                                        alt={project.title}
+                                                        height={90}
+                                                        width={90}
+                                                        />
+                                                        </>
+                                                    )
+                                                    :
+                                                    (
+                                                        <>
+                                                        <div className={`bg-gray-100 text-gray-800
+                                                        transition hover:bg-gray-800 hover:text-gray-100
+                                                            w-full h-full absolute rounded-xl p-3
+                                                            flex flex-col justify-center`}>
+                                                            <p className={`w-full mb-1 text-center text-xl font-bold`}>
+                                                                { project.title }
+                                                            </p>
+                                                        </div>
+                                                        </>
+                                                    )
+                                                }
+                                            </Link>
                                         </div>
-
-                                        <Image
-                                        className="w-3/4"
-                                        src={'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/panacea/oyfk0muck7n9tagtr87n'}
-                                        alt={'LZ'}
-                                        height={90}
-                                        width={90}
-                                        />
-                                    </Link>
-                                </div>
+                                    ))
+                                }
+                                
                                 
                                 <div className={`col-span-1 h-fit
                                 col-start-4 lg:col-start-6 xl:col-start-9
