@@ -12,7 +12,7 @@ const projectsData: Record<string, {
         It helps the patients to save and manage their own data and appointments.
         It lets the dentist and admins to manage the user's dental registers information and their appointments`,
         link: 'https://www.dentistacoapa.com',
-        image: 'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/nsssf5tl92lh4fk3tila',
+        image: 'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/qb2tl8zgafip5nqgorzu',
         small_image: 'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/dentista_coapa/tche25ba9pooj6yfdcyr',
         slug: 'dentista_coapa',
         tech_stack: ['Next.js', 'Typescript', 'Tailwind', 'PostgreSQL - Prisma', 'Git - Github']
@@ -20,12 +20,12 @@ const projectsData: Record<string, {
     'panacea': {
         title: 'Panacea',
         short_description: 'A showcase page for a CBD products startup located in Mexico City.',
-        long_description: 'A showcase page for a CBD products startup located in Mexico City. Where people can get to know more about CBD and its properties, and browse all the companie"s products.',
+        long_description: `A showcase page for a CBD products startup located in Mexico City. Where people can get to know more about CBD and its properties, and browse all the company's products.`,
         link: 'https://panacea-mexico-683mhyhv0-tony-dev96.vercel.app/',
         image: 'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/tony_portfolio/etjjo3l1qrkufbd4uje7',
         small_image: 'https://res.cloudinary.com/dgp7gxmcu/image/upload/f_auto,q_auto/v1/panacea/oyfk0muck7n9tagtr87n',
         slug: 'panacea',
-        tech_stack: ['HTML 5', 'CSS 3', 'JavaScript', 'Django', 'Headless CMS']
+        tech_stack: ['HTML 5', 'CSS 3', 'JavaScript', 'Django', 'Contentful (CMS)']
     },
     'altony': {
         title: 'Altony AI',

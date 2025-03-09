@@ -106,7 +106,7 @@ export default function Home() {
                             <div className={`h-full
                             grid gap-6 items-center
                             grid-cols-4 lg:grid-cols-6 xl:grid-cols-9
-                            grid-rows-2`}>
+                            md:grid-rows-2`}>
                                 
                                 {
                                     Object.values(projectsData).slice(0, 4).map((project, index) => (
@@ -119,7 +119,7 @@ export default function Home() {
                                             bg-gray-100
                                             cursor-pointer rounded-2xl 
                                             opacity-0 group-hover:opacity-100 
-                                            transition duration-200`}
+                                            transition duration-200 ${index >= 3 && 'hidden md:flex'}`}
                                             >   
                                                 {
                                                     project.small_image ?
@@ -132,9 +132,6 @@ export default function Home() {
                                                             flex flex-col justify-center`}>
                                                             <p className={`w-full mb-1 text-center text-xl text-gray-100 font-bold`}>
                                                                 { project.title }
-                                                            </p>
-                                                            <p className={`w-full text-center text-sm text-gray-100`}>
-                                                                -
                                                             </p>
                                                         </div>
         
@@ -169,7 +166,7 @@ export default function Home() {
                                 
                                 <div className={`col-span-1 h-fit
                                 col-start-4 lg:col-start-6 xl:col-start-9
-                                row-start-2`}>
+                                md:row-start-2`}>
                                     <Link href="/projects" className={`
                                     max-h-full aspect-square
                                     text-white md:text-xl

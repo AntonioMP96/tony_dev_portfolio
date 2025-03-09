@@ -47,7 +47,7 @@ export default async function ProjectPage({params}: Props) {
                         width={600}
                         height={300}
                         fetchPriority='high'
-                        className={`absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110`}
+                        className={`absolute inset-0 h-full w-full object-cover object-top transition duration-200 group-hover:scale-110`}
                         />
                     </Link>
 
