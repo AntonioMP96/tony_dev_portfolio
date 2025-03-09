@@ -43,7 +43,7 @@ const ModalText = () => {
             I have a passion for technology and a love for creating innovative solutions.
             I&apos;m always looking for new challenges and opportunities to grow as a developer.
             <br/><br/>
-            I&apos;m a self-taught developer who has been coding for over 4 years now.
+            I&apos;m a self-taught developer who has been coding for over 5 years now.
             I have a strong foundation in programming languages and technologies.
             I&apos;m always looking for new challenges and opportunities to grow as a developer.
         </p>

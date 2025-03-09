@@ -40,7 +40,7 @@ export const ExperienceButton = () => {
 const ModalText = () => {
     return (
         <ul className='mt-3 2xl:text-xl relative'>
-            <div className='h-full bg-white w-[1px] absolute left-[4px] top-[15px]'></div>
+            {/* <div className='h-full bg-white w-[1px] absolute left-[4px] top-[15px]'></div> */}
             <li className='ml-5 my-2 list-disc'>
                 Fullstack developer @ 
                 <a className="text-blue-500 hover:text-blue-600 transition-all" 

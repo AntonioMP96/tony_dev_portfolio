@@ -52,7 +52,7 @@ export const TechSlackSlider = () => {
                 <p className='text-lg mb-6'>
                     This are some of the languages, frameworks and tools that I use for my projects:
                 </p>
-                <div className='flex flex-wrap justify-around gap-6'>
+                <div className='flex flex-wrap justify-around gap-10'>
                     {
                         Object.values(techStack).map((item, index) => (
                             <TechButton

@@ -13,23 +13,20 @@ export const TechButton = ({image, title, onClick, hideName}: Props) => {
 
 
     return (
-        <div className={`h-full aspect-square mx-3
-        ${hideName && 'cursor-pointer group'}
-        `} onClick={onClick}>
+        <div
+        className={`mx-3 ${hideName && 'cursor-pointer'}`} 
+        onClick={onClick}>
             <Image
             src={image}
             alt={title}
             width={90}
             height={90}
-            className='h-full w-full aspect-square'
+            className='h-full max-h-full w-auto object-contain object-center mx-auto'
             />
-            <p className={`text-center text-sm mt-2 transition-all
-            ${ hideName ? 'opacity-0 group-hover:opacity-100' : 'text-xl'}
-            `}>
+            {!hideName &&
+            <p className={`text-center text-sm md:text-base mt-2 transition-all`}>
                 {title}
-            </p>
-
-
+            </p>}
         </div>
     )
 }
